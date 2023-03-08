@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(224, 165, 250);
+}
+
+.card {
+    border: solid;
+    width: 20%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(218, 32, 159);
+    cursor: pointer;
+    box-shadow: 2px 2px 13px;
+    transition: transform .2s;
+}
+.lista:hover .card {
+    filter: blur(3px);
+}
+
+.lista .card:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .lista {
+        display:block;
+    }
+    .card {
+        background-color: lightblue;
+        width: 100%;
+        text-align: center;        
+    }
+}
